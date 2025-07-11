@@ -7,16 +7,14 @@ const isChecked = ref(false)
 
 <template>
   <nav class="bg-black text-white">
-    <ul class="flex flex-wrap gap-10 text-sm font-medium lg:mt-2 items-center justify-center ">
+    <ul class="flex flex-wrap gap-10 text-sm font-medium lg:mt-2 items-center justify-around">
       <li v-for="(item, index) in bottomNavItem" :key="index">
         <NuxtLink :to="item.path" class="flex items-center gap-2">
           <img :src="item.icon" alt="" class="w-5 h-5" />
           {{ item.name }}
         </NuxtLink>
       </li>
-
-      <!-- Language Switcher -->
-      <li class="flex items-center gap-30">
+      <li class="flex flex-wrap gap-3">
         <NuxtLink
           to="#"
           class="flex items-center gap-2 bg-white text-black rounded-full px-3 py-1 h-[34px] uppercase"
@@ -41,8 +39,7 @@ const isChecked = ref(false)
 
           <div
             class="absolute bottom-[0.5px] left-[2px] w-[30px] h-[30px] bg-white rounded-full shadow-md transform transition duration-300"
-            :class="{ 'translate-x-7': isChecked }"
-          >
+            :class="{ 'translate-x-7': isChecked }">
             <img
               :src="toggle"
               alt="Sun"

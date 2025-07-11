@@ -12,10 +12,10 @@ const selected = ref<string | null>(null)
 </script>
 
 <template>
-  <nav class="">
-    <ul class="flex flex-wrap gap-10 text-sm font-medium ">
+  <nav>
+    <ul class="flex flex-wrap gap-10 text-sm font-medium justify-around">
       <!-- Render topNavItem links -->
-      <li v-for="(item, index) in topNavItem" :key="index" class="flex items-center text-base font-normal uppercase ">
+      <li v-for="(item, index) in topNavItem" :key="index" class="flex items-center text-base font-normal uppercase">
         <UDropdownMenu
           v-if="item.dropdown"
           size="lg"
@@ -59,8 +59,6 @@ const selected = ref<string | null>(null)
         </span>
         </NuxtLink>
       </li>
-
-      <!-- Login/Register OR replacement UI -->
       <li class="flex flex-wrap items-center gap-3 m-0 p-0 h-[60px]">
         <template v-if="!selected">
           <NuxtLink @click.prevent="selected = 'login'" class="bg-white text-black uppercase px-4 py-2 shadow-lg rounded-[20px] cursor-pointer">

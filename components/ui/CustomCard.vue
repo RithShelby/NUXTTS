@@ -10,7 +10,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="w-[280px] rounded-[15px] overflow-hidden shadow-md border border-amber-200 mr-4">
+  <div class="w-[280px] rounded-[15px] overflow-hidden shadow-md border border-amber-200">
     <div class="relative h-[187px]">
       <img :src="img" :alt="title" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent rounded-[15px]"></div>
