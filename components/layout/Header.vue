@@ -6,7 +6,7 @@ import Topheader from './header/Topheader.vue';
 </script>
 
 <template>
-    <header class="shadow-md sticky top-0 custom-gradient">
+    <header class="shadow-md  custom-gradient">
       <div class="flex xl:flex-nowrap flex-wrap m-0 ">
         <div class="w-[488px] h-[107px] bg-black p-[10px] flex items-center justify-center rounded-tr-[60px]">
           <h1 class="text-white text-[96px] ms-auto uppercase">
