@@ -22,7 +22,7 @@ import basketPlayer from '~/assets/image/basketmatch.jpg'
 import esportPlayer from '~/assets/image/esport.jpg'
 import footballMatch from '~/assets/image/match.jpg'
 import livee from '~/assets/icons/live.svg'
-import ringGold from '~/assets/icons/ringGoldd.svg'
+import ringGold from '~/assets/icons/Blingking_Status.svg'
 import ringBlack from '~/assets/icons/ringBlack.svg'
 export const topNavItem = [
   {

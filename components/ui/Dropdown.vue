@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import type { DropdownMenuItem } from '#ui/types'
-const props = defineProps({
+defineProps({
   label: { type: String, required: true },
   items: {
     type: Array as PropType<Array<{ label: string; icon?: string; path?: string }>>,
